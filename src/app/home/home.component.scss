@@ -1,33 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 
-@keyframes shake {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(0.5px);
-  }
-  50% {
-    transform: translateY(1px);
-  }
-  75% {
-    transform: translateY(0.5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+main{
+display: flex;
+justify-content: center;
+align-items: center;
 }
-
 .shadow-1 {
   box-shadow: 0px 8px 15px 0px #1414141f;
 }
 
 .home {
   border: 1px solid #eeeeee;
-  width: 370px;
   height: auto;
   margin-top: 85px;
-  margin-left: 104px;
   padding: 10px 0px 10px 0px;
   border-radius: 4px;
 }
@@ -49,7 +34,7 @@
   opacity: 0px;
 }
 
-.sep {
+.separator {
   width: 340px;
   border-top: 0.7px solid #cdcdcd;
   margin: 10px 15px;
@@ -74,9 +59,7 @@
   line-height: 18.2px;
   position: relative;
 }
-.shake {
-  animation: shake 0.2s ease;
-}
+
 .button_done:hover {
   background-color: #ffd84d;
   cursor: pointer;
@@ -94,6 +77,8 @@
   height: 23px;
   border: 1px solid #cdcdcd;
   opacity: 0.6;
+  appearance: none;
+  -webkit-appearance: none; 
   outline: none;
   cursor: pointer;
   position: relative;

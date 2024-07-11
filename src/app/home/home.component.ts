@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -10,11 +10,10 @@ import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  constructor(private fb: FormBuilder) {}
+  constructor() {}
   itemNames = ['Page 1', 'Page 2', 'Page 3', 'Page 4'];
   checkItems: any[] = [];
   allChecked = false;
-  buttonClicked = false;
 
   toggleAll(event: any) {
     const isChecked = event.target.checked;
