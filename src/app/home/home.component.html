@@ -1,0 +1,32 @@
+<div class="home shadow-1">
+  <div class="apart">
+    <label>All pages</label>
+    <div class="checkbox-container">
+      <input
+        type="checkbox"
+        [(ngModel)]="allChecked"
+        class="checkbox"
+        (change)="toggleAll($event)"
+      />
+    </div>
+  </div>
+  <div class="sep"></div>
+
+  <div class="apart" *ngFor="let item of itemNames">
+    <label>{{ item }}</label>
+    <div class="checkbox-container">
+      <input
+        type="checkbox"
+        [checked]="isChecked(item)"
+        class="checkbox"
+        (change)="itemClicked(item, $event)"
+      />
+    </div>
+  </div>
+  <div class="sep"></div>
+
+  <div class="button_div">
+    <button (click)="done($event)" class="btn">Done</button>
+  </div>
+</div>
+<div></div>
